@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="408" viewBox="0 0 720 408" role="img" aria-label="tiktok-flame adding two friends, sending their flames, then showing the status">
+<style>
+text{font:15px ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;white-space:pre}
+.pr{fill:#7ee787}.cmd{fill:#e6edf3;font-weight:600}.out{fill:#8b949e}.fl{fill:#ffa657}.ok{fill:#7ee787}
+.tt{font:600 13px system-ui,-apple-system,"Segoe UI",sans-serif;fill:#8b949e}
+</style>
+<rect width="720" height="408" rx="12" fill="#0d1117"/>
+<rect x="0.5" y="0.5" width="719" height="407" rx="12" fill="none" stroke="#30363d"/>
+<circle cx="24" cy="22" r="6" fill="#ff5f57"/><circle cx="44" cy="22" r="6" fill="#febc2e"/><circle cx="64" cy="22" r="6" fill="#28c840"/>
+<text x="360" y="27" text-anchor="middle" class="tt">tiktok-flame</text>
+<line x1="0" y1="42" x2="720" y2="42" stroke="#21262d"/>
+<text x="24" y="74"><tspan class="pr">$ </tspan><tspan class="cmd">tiktok-flame add alex @sam.rose</tspan></text>
+<text x="24" y="97" class="out">Added: @alex, @sam.rose. Both accounts must follow each other.</text>
+<text x="24" y="120"><tspan class="pr">$ </tspan><tspan class="cmd">tiktok-flame send</tspan></text>
+<text x="24" y="143" class="out">Sending to 2 friend(s)...</text>
+<text x="24" y="166" class="fl">  🔥 @alex</text>
+<text x="24" y="189" class="fl">  🔥 @sam.rose</text>
+<text x="24" y="212" class="ok">Done: 2/2 🔥</text>
+<text x="24" y="235"><tspan class="pr">$ </tspan><tspan class="cmd">tiktok-flame status</tspan></text>
+<text x="24" y="258" class="out">Account : @you (logged in)</text>
+<text x="24" y="281" class="out">Message : 🔥</text>
+<text x="24" y="304" class="out">Today   : 2/2 flame(s) sent</text>
+<text x="24" y="327" class="out"></text>
+<text x="24" y="350" class="fl">  @alex                     🔥 sent today</text>
+<text x="24" y="373" class="fl">  @sam.rose                 🔥 sent today</text>
+</svg>

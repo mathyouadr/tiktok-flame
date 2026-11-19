@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tiktok-flame"
+dynamic = ["version"]
+description = "Keep your TikTok streaks 🔥 alive: a daily DM to the friends you pick, from the command line."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Mathyou" }]
+keywords = ["tiktok", "streak", "flame", "automation", "playwright", "cli"]
+dependencies = ["playwright>=1.45", "zxing-cpp>=2.3", "pillow>=9"]
+classifiers = [
+  "Environment :: Console",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/mathyouadr/tiktok-flame"
+Issues = "https://github.com/mathyouadr/tiktok-flame/issues"
+
+[project.scripts]
+tiktok-flame = "tiktok_flame.cli:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "tiktok_flame.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
