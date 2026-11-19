@@ -364,7 +364,11 @@ def cmd_send(a, store):
 
 
 def cmd_schedule(a, store):
-    exe = shutil.which("tiktok-flame") or f"{sys.executable} -m tiktok_flame"
+    from pathlib import Path
+    exe = shutil.which("tiktok-flame")
+    if not exe:                                   # not on PATH (venv not activated): the script next to python
+        cand = Path(sys.executable).parent / ("tiktok-flame.exe" if sys.platform == "win32" else "tiktok-flame")
+        exe = str(cand) if cand.exists() else f"{sys.executable} -m tiktok_flame"
     out("Run it once a day. A random delay (--jitter, in minutes) makes it look less robotic.\n")
     out("Linux / macOS, cron (`crontab -e`), between 11:45 and 12:15:")
     out(f"  45 11 * * * {exe} send --jitter 30 --quiet\n")
